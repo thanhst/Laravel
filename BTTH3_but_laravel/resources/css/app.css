@@ -1,0 +1,29 @@
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 4px;
+    color: #fff;
+    display: none;
+    z-index: 9999;
+  }
+  
+  .success {
+    background-color: #00cc00;
+  }
+  
+  .error {
+    background-color: #ff0000;
+  }
+  
+  .warning {
+    background-color: #ffff00;
+  }
+  
+  .close-button {
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+  }
