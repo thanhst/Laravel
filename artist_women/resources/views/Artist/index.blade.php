@@ -8,7 +8,7 @@
         <a href="{{ route('artworks.create') }}" style="width:100px;" class="btn btn-success">Add</a>
         <div class="width-medium">
             <div class="d-flex justify-content-between mt-3">
-                <table class="table_infor w-100">
+                <table class="table table_infor w-100 table-hover align-middle">
                     <thead>
                         <tr class="border-bottom">
                             <th>#</th>
@@ -30,7 +30,7 @@
                             <td><?= $artwork->description ?></td>
                             <td><?= $artwork->art_type ?></td>
                             <td><?= $artwork->media_link ?></td>
-                            <td><img src="<?= $artwork->cover_img ?>" alt="" style="height:100px;width:100px;"></td>
+                            <td><img src="<?= $artwork->cover_img ?>" alt="" style="height:75px;width:75px; border-radius:10px; border:1px solid rgba(0,0,0,0.3)"></td>
                             <td><a class="nav-link text-blue"
                                 href="{{ route('artworks.show', ['artwork' => $artwork->id]) }}"> <i
                                     class="bi bi-book fs-4"></i></a></td>

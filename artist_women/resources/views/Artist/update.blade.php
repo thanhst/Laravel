@@ -26,11 +26,11 @@
                         style="display: none;">
                     <h5 class="text-white">{{ $artwork->artist_name }}</h5>
                 </div>
-                <div class="m-auto form-group p-3 bg-gray rounded-3 d-flex flex-column gap-3 pb-5">
+                <div class="m-auto form-group p-3 bg-gray rounded-3 d-flex flex-column gap-3 pb-3">
 
                     <div class="input-group">
                         <div class="input-group-text">Id</div><input type="input" readonly style="pointer-events: none"
-                            placeholder="Id of artist" name="id" class="form-control bg-gray"
+                            placeholder="Id of artist" name="id" class="form-control bg-readonly"
                             value="{{ $artwork->id }}">
                     </div>
                     <div class="input-group">
@@ -56,7 +56,7 @@
                         <div class="input-group-text">Media link</div><input type="url" placeholder="Media link"
                             value="{{ $artwork->media_link }}" name="media_link" class="form-control">
                     </div>
-                    <div class="d-flex justify-content-around">
+                    <div class="d-flex justify-content-around mt-3">
                         <a style="cursor: pointer" data-bs-toggle="modal" data-bs-target="#Modal<?= $artwork->id ?>"
                             type="submit" class="btn btn-success">Update now</a>
                         <a href="{{ route('artworks.index') }}" class="btn btn-primary">Exit</a>
