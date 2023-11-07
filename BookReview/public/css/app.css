@@ -1,0 +1,70 @@
+.notification {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  width: 300px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  display: none;
+  z-index: 9999;
+  animation:slideInLeft ease .3s,fadeOut linear 1s 3s forwards;
+}
+
+.success {
+  background-color: #00cc00;
+}
+
+.error {
+  background-color: #ff0000;
+}
+
+.warning {
+  background-color: #c5c507;
+}
+.infor{
+  background-color: #007bff;
+}
+.close-button {
+  cursor: pointer;
+  float: right;
+  font-weight: bold;
+}
+.notification-hidden {
+  opacity: 0;
+}
+.bi::before, [class^="bi-"]::before, [class*=" bi-"]::before{
+  vertical-align:auto;
+}
+@keyframes slideInLeft{
+  from{
+    opacity:0;
+    transform: translateX(calc(100% + 32px));
+  }
+  to {
+    opacity:1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeOut{
+  to{
+    opacity: 0;
+  }
+}
+.height-infor{
+  height:397px;
+}
+.bg-blur{
+  background-color: #00000080;
+  transition:all ease-in 0.4s;
+}
+.img-show{
+  width:200px;height:200px;border-radius:10px;
+}
+.image-input:hover .bg-blur{
+  height: 200px !important;
+  transition:all ease-in 0.5s;
+}
+.bg-readonly{
+  background-color: rgb(202, 200, 200);
+}
